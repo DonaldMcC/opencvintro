@@ -82,6 +82,9 @@ celerybeat-schedule
 # dotenv
 .env
 
+#videos
+.mov
+
 # virtualenv
 .venv
 venv/
