@@ -8,7 +8,7 @@ def onMouse(event, x, y, flags, param):
         clicked = True
 
 #videoCapture = cv2.VideoCapture('MyOutputVid.avi')
-videoCapture = cv2.VideoCapture('kite1.avi')
+videoCapture = cv2.VideoCapture('IMG_0464.MOV')
 print videoCapture.grab() 
 
 #fps = videoCapture.get(cv2.CAP_PROP_FPS)
@@ -23,7 +23,7 @@ print 'Showing camera feed. Click window or press any key to stop.'
 success, frame = videoCapture.read()
 while success and not clicked:
     cv2.imshow('MyWindow', frame)
-    cv2.waitKey(100)
+    cv2.waitKey(25)
     success, frame = videoCapture.read()
 
     
